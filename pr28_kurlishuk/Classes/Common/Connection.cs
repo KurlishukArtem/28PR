@@ -17,7 +17,7 @@ namespace pr28_kurlishuk.Classes.Common
             connection.Open();
             return connection;
         }
-
+         
         public static MySqlDataReader Query(string SQL, MySqlConnection connection)
         {
             return new MySqlCommand(SQL, connection).ExecuteReader();
